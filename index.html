@@ -20,10 +20,19 @@
   <script>
     const currentURL = window.location.href;
     const url = new URL(currentURL);
-    const blogIdParam = url.searchParams.get('PROJ');
+    const blogIdParam1 = url.searchParams.get('proj');
+    const blogIdParam2 = url.searchParams.get('PROJ');
     
-    if (blogIdParam !== null) {
-      const temp = blogIdParam.trim()
+    
+    if (blogIdParam1 !== null || blogIdParam2 !== null) {
+      let temp = "empty";
+
+      if(blogIdParam1 !== null){
+        temp = blogIdParam1.trim();
+      }else if(blogIdParam2 !== null){
+        temp = blogIdParam2.trim();
+      }
+      
       const pro = temp.toLowerCase();
       
       if(pro === 'whatsapp'){
