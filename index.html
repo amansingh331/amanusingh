@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sorry!!!</title>
+  <title>Sorry!!</title>
   <style>
     body{
         margin: 0;
@@ -20,10 +20,11 @@
   <script>
     const currentURL = window.location.href;
     const url = new URL(currentURL);
-    const blogIdParam = url.searchParams.get('proj');
+    const blogIdParam = url.searchParams.get('PROJ');
     
     if (blogIdParam !== null) {
-      const pro = blogIdParam.trim()
+      const temp = blogIdParam.trim()
+      const pro = temp.toLowerCase();
       
       if(pro === 'whatsapp'){
         window.location.href = "https://github.com/amansingh331/Portfolio-template-in-php-mysql/tree/main/login/project1";
@@ -34,10 +35,6 @@
       }else if(pro === 'counselling'){
         window.location.href = "https://connectstudent.in";
       }
-      
-
-    }else {
-      console.log('blog_id parameter not found in the URL.');
     }
   </script>
 </body>
