@@ -1,10 +1,35 @@
+<!-- index.html (or any other HTML file where you include your JavaScript code) -->
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      welcome
-    </title>
-  </head>
-  <body>
-    hii welcome to the site
-  </body>
+<head>
+  <title>Extract blog_id from URL</title>
+</head>
+<body>
+  <!-- Your HTML content goes here -->
+  asdfjalsdfja
+  <script>
+    // script.js (JavaScript file)
+
+// Get the current URL of the page
+const currentURL = window.location.href;
+
+// Create a URL object to work with the URL and its parameters
+const url = new URL(currentURL);
+
+// Get the value of the 'blog_id' parameter from the URL
+const blogIdParam = url.searchParams.get('blog_id');
+
+// Check if the 'blog_id' parameter exists in the URL
+if (blogIdParam !== null) {
+  // Convert the parameter value to a number (if needed)
+  const blogId = parseInt(blogIdParam, 10);
+
+  // Now you can use the 'blogId' variable to work with the extracted value
+  console.log('Extracted blog_id:', blogId);
+} else {
+  console.log('blog_id parameter not found in the URL.');
+}
+
+  </script>
+</body>
 </html>
