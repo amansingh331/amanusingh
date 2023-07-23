@@ -1,35 +1,44 @@
-<!-- index.html (or any other HTML file where you include your JavaScript code) -->
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Extract blog_id from URL</title>
+  <title></title>
+  <style>
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  </style>
 </head>
 <body>
-  <!-- Your HTML content goes here -->
-  asdfjalsdfja
+
+    <h2>The page you are looking for is temporarily unavailable. Please check the link and try again later!</h2>
+
   <script>
-    // script.js (JavaScript file)
+    const currentURL = window.location.href;
+    const url = new URL(currentURL);
+    const blogIdParam = url.searchParams.get('proj');
+    
+    if (blogIdParam !== null) {
+      const pro = blogIdParam.trim()
+      
+      if(pro === 'whatsapp'){
+        window.location.href = "https://github.com/amansingh331/Portfolio-template-in-php-mysql/tree/main/login/project1";
+      }else if(pro === '3d'){
+        window.location.href = "https://github.com/amansingh331/website-template-in-php-with-mysqli";
+      }else if(pro === 'portfolio'){
+        window.location.href = "http://amanusingh.co";
+      }else if(pro === 'counselling'){
+        window.location.href = "https://connectstudent.in";
+      }
+      
 
-// Get the current URL of the page
-const currentURL = window.location.href;
-
-// Create a URL object to work with the URL and its parameters
-const url = new URL(currentURL);
-
-// Get the value of the 'blog_id' parameter from the URL
-const blogIdParam = url.searchParams.get('blog_id');
-
-// Check if the 'blog_id' parameter exists in the URL
-if (blogIdParam !== null) {
-  // Convert the parameter value to a number (if needed)
-  const blogId = parseInt(blogIdParam, 10);
-
-  // Now you can use the 'blogId' variable to work with the extracted value
-  console.log('Extracted blog_id:', blogId);
-} else {
-  console.log('blog_id parameter not found in the URL.');
-}
-
+    }else {
+      console.log('blog_id parameter not found in the URL.');
+    }
   </script>
 </body>
 </html>
