@@ -363,40 +363,63 @@
     });
   </script>
 
-  <h2>Please wait page is loding!!</h2>
-
   <script>
     const currentURL = window.location.href;
     const url = new URL(currentURL);
     const blogIdParam1 = url.searchParams.get('proj');
     const blogIdParam2 = url.searchParams.get('PROJ');
+    const hasProjParam = url.searchParams.has('proj');
+    const redirectDelay = 1600;
+    const loadingPopup = document.createElement('div');
+
+    loadingPopup.className = 'loading-popup';
+    loadingPopup.id = 'loading-popup';
+    loadingPopup.setAttribute('role', 'alert');
+    loadingPopup.setAttribute('aria-live', 'assertive');
+    loadingPopup.setAttribute('aria-hidden', 'true');
+    loadingPopup.innerHTML = '<div class="loading-popup-card"><h2>Please wait page is loding!!</h2></div>';
 
 
-    if (blogIdParam1 !== null || blogIdParam2 !== null) {
-      let temp = "empty";
+    if (hasProjParam) {
+      const pro = (blogIdParam1 || '').trim().toLowerCase();
 
-      if (blogIdParam1 !== null) {
-        temp = blogIdParam1.trim();
-      } else if (blogIdParam2 !== null) {
-        temp = blogIdParam2.trim();
-      }
+      document.body.appendChild(loadingPopup);
+      loadingPopup.classList.add('is-visible');
+      loadingPopup.setAttribute('aria-hidden', 'false');
 
-      const pro = temp.toLowerCase();
+      setTimeout(() => {
+        loadingPopup.classList.remove('is-visible');
+        loadingPopup.setAttribute('aria-hidden', 'true');
+      }, redirectDelay);
 
       if (pro === 'whatsapp') {
-        window.location.href = "https://github.com/amansingh331/Portfolio-template-in-php-mysql/tree/main/login/project1";
+        setTimeout(() => {
+          window.location.href = "https://github.com/amansingh331/Portfolio-template-in-php-mysql/tree/main/login/project1";
+        }, redirectDelay);
       } else if (pro === '3d') {
-        window.location.href = "https://github.com/amansingh331/website-template-in-php-with-mysqli";
+        setTimeout(() => {
+          window.location.href = "https://github.com/amansingh331/website-template-in-php-with-mysqli";
+        }, redirectDelay);
       } else if (pro === 'portfolio') {
-        window.location.href = "https://newportfolio.azurewebsites.net/";
+        setTimeout(() => {
+          window.location.href = "https://newportfolio.azurewebsites.net/";
+        }, redirectDelay);
       } else if (pro === 'counselling') {
-        window.location.href = "https://connectstudent.in";
+        setTimeout(() => {
+          window.location.href = "https://connectstudent.in";
+        }, redirectDelay);
       } else if (pro === 'socialnet') {
-        window.location.href = "https://github.com/amansingh331/soc";
+        setTimeout(() => {
+          window.location.href = "https://github.com/amansingh331/soc";
+        }, redirectDelay);
       } else if (pro === 'webs') {
-        window.location.href = "http://amanusingh.co";
+        setTimeout(() => {
+          window.location.href = "http://amanusingh.co";
+        }, redirectDelay);
       } else if (pro === 'cv') {
-        window.location.href = "https://drive.google.com/file/d/19XNGt6xyL7dmpD12JDdHZ1k7jydJpZw0/view";
+        setTimeout(() => {
+          window.location.href = "https://drive.google.com/file/d/19XNGt6xyL7dmpD12JDdHZ1k7jydJpZw0/view";
+        }, redirectDelay);
       }
     }
   </script>

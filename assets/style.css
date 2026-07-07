@@ -523,6 +523,56 @@ span {
     margin-bottom: 4rem;
 }
 
+
+.loading-popup {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(8, 27, 41, 0.88);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+
+.loading-popup.is-visible {
+    display: flex;
+}
+
+.loading-popup-card {
+    padding: 2.4rem 3rem;
+    border: .2rem solid var(--main-color);
+    border-radius: 1.2rem;
+    background: linear-gradient(135deg, rgba(17, 46, 66, 0.98), rgba(8, 27, 41, 0.98));
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
+    text-align: center;
+    transform: translateY(0);
+    animation: loadingPopupFloat 1.6s ease-in-out infinite;
+}
+
+.loading-popup-card h2 {
+    font-size: 2.2rem;
+    color: var(--text-color);
+}
+
+.loading-popup.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@keyframes loadingPopupFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-0.8rem);
+    }
+}
 .portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
