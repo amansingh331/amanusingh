@@ -1,56 +1,424 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Sorry!!</title>
-  <style>
-    body{
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.11.0/lottie.min.js"></script>
 </head>
+
 <body>
 
-    <h2>Please wait page is loding!!</h2>
+  <header class="header top">
+    <a href="#" class="logo">Port<span>folio</span></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section class="home" id="home">
+
+    <div class="home-info">
+      <div class="home-content left">
+        <h1>Hi, I'm <span>Aman</span></h1>
+        <h3 class="text-animate">And I'm a <span class="multiple-text"></span></h3>
+        <p>SDE @ Qualibar | Ex SDE Intern @ Fractal Analytics <br>
+          Competitive Programmer | Web Developer | Android Developer</p>
+        <div class="btn-box">
+          <a href="#contact" class="btn">Hire Me</a>
+          <a href="https://amansingh331.github.io/amanusingh/?proj=cv" class="btn" target="_blank">View CV</a>
+        </div>
+      </div>
+      <div class="home-sci">
+        <a href="https://www.linkedin.com/in/aman-singh2001/" target="_blank">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+        <a href="https://github.com/amansingh331" target="_blank">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://leetcode.com/u/aman__singh2001/" title="Coding Profiles" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M13.483 0a1.37 1.37 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.3 5.3 0 0 0-1.209 2.104a5 5 0 0 0-.125.513a5.5 5.5 0 0 0 .062 2.362a6 6 0 0 0 .349 1.017a5.9 5.9 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.38 1.38 0 0 0-1.951-.003l-2.396 2.392a3.02 3.02 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.7 2.7 0 0 1 .066-.523a2.55 2.55 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0m-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z" />
+          </svg>
+        </a>
+        <a href="https://codeforces.com/profile/amansingh9931495681" title="Coding Profiles" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M4.5 7.5A1.5 1.5 0 0 1 6 9v10.5A1.5 1.5 0 0 1 4.5 21h-3C.673 21 0 20.328 0 19.5V9c0-.828.673-1.5 1.5-1.5zm9-4.5A1.5 1.5 0 0 1 15 4.5v15a1.5 1.5 0 0 1-1.5 1.5h-3c-.827 0-1.5-.672-1.5-1.5v-15c0-.828.673-1.5 1.5-1.5zm9 7.5A1.5 1.5 0 0 1 24 12v7.5a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5V12a1.5 1.5 0 0 1 1.5-1.5z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="my-img right">
+      <div id="lottie-animation" style="width: 500px; height: 500px;"></div>
+    </div>
+  </section>
+  <section class="about" id="about">
+
+    <div class="about-img left">
+      <img src="./assets/profile.png" alt="" class="about-img-2">
+      <span class="circle-spin"></span>
+      <span class="circle-spin-2"></span>
+    </div>
+    <div class="about-details right">
+      <h2 class="heading">About <span>Me</span></h2>
+      <div class="about-content">
+        <p>Hi! I'm Aman, a graduate in Electrical Engineering from the National Institute of Technology (NIT Rourkela)
+          in Rourkela, Odisha. I'm now gaining great experience as an SDE at Qualibar. Previously, I gained valuable
+          experience as an SDE intern at Fractal Analytics. My excitement for coding and problem-solving is strong, and
+          I'm also highly interested in competitive programming, which I find intriguing. I also have a strong interest
+          in web and Android development, which provides me tremendous satisfaction. I sincerely welcome everyone who is
+          interested in connecting with me.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- education section design -->
+  <section class="education" id="education">
+    <div class="education-row">
+      <div class="education-column right">
+        <h3 class="title">Experience</h3>
+        <div class="education-box">
+          <div class="education-content">
+            <div class="content">
+              <div class="year"><i class="bx bxs-calendar"></i>Sep, 2024 - Present</div>
+              <h3>SDE - Qualibar</h3>
+              <p>Working as a Full Stack Developer at Qualibar using Laravel, Angular, and MySQL to build and maintain
+                scalable web applications.</p>
+            </div>
+          </div>
+          <div class="education-content">
+            <div class="content">
+              <div class="year"><i class="bx bxs-calendar"></i>May, 2024 - July, 2024</div>
+              <h3>SDE Intern - Fractal Analytics</h3>
+              <p>Working in the backend engineering team. My primary tech stack includes - Node.js, Express.js and
+                MongoDB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="education-column left">
+        <h3 class="title">Education</h3>
+        <div class="education-box">
+
+          <div class="education-content">
+            <div class="content">
+              <div class="year"><i class="bx bxs-calendar"></i>2021 - 2025</div>
+              <h3>B.Tech - National Institute of Technology, Rourkela</h3>
+              <p>Bachelor in Electrical Engineering</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2 class="heading top">My <span>Skills</span></h2>
+    <div class="skills-column">
+      <div class="skills-box">
+        <div class="skills-content">
+          <div class="progress-circle-outer">
+            <div class="progress-circle" style="--progress: 85.75;">
+              <span>85%</span>
+            </div>
+            <h2>C++</h2>
+          </div>
+          <div class="progress-circle-outer">
+            <div class="progress-circle" style="--progress: 75.75;">
+              <span>75%</span>
+            </div>
+            <h2>JAVA</h2>
+          </div>
+          <div class="progress-circle-outer">
+            <div class="progress-circle" style="--progress: 70.75;">
+              <span>70%</span>
+            </div>
+            <h2>JavaScript</h2>
+          </div>
+          <div class="progress-circle-outer">
+            <div class="progress-circle" style="--progress: 80.75;">
+              <span>80%</span>
+            </div>
+            <h2>PHP</h2>
+          </div>
+          <div class="progress-circle-outer">
+            <div class="progress-circle" style="--progress: 80.75;">
+              <span>80%</span>
+            </div>
+            <h2>MySQL</h2>
+          </div>
+          <div class="progress-circle-outer">
+            <div class="progress-circle" style="--progress: 65.75;">
+              <span>65%</span>
+            </div>
+            <h2>React</h2>
+          </div>
+          <div class="progress-circle-outer">
+            <div class="progress-circle" style="--progress: 70.75;">
+              <span>70%</span>
+            </div>
+            <h2>React Native</h2>
+          </div>
+          <div class="progress-circle-outer">
+            <div class="progress-circle" style="--progress: 70.75;">
+              <span>70%</span>
+            </div>
+            <h2>Node</h2>
+          </div>
+          <div class="progress-circle-outer">
+            <div class="progress-circle" style="--progress: 75.75;">
+              <span>75%</span>
+            </div>
+            <h2>Express</h2>
+          </div>
+          <div class="progress-circle-outer">
+            <div class="progress-circle" style="--progress: 60.75;">
+              <span>60%</span>
+            </div>
+            <h2>MongoDB</h2>
+          </div>
+          <div class="progress-circle-outer">
+            <div class="progress-circle" style="--progress: 80.75;">
+              <span>80%</span>
+            </div>
+            <h2>HTML</h2>
+          </div>
+          <div class="progress-circle-outer">
+            <div class="progress-circle" style="--progress: 75.75;">
+              <span>75%</span>
+            </div>
+            <h2>CSS</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- portfolio section design -->
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading top">Latest <span>Works</span></h2>
+
+    <div class="portfolio-container bottom">
+      <div class="portfolio-box">
+        <img src="./assets/aktradelink.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Akanksha Trade Link</h4>
+          <p>AkankshaTradeLink.in is the official site of Akanksha Trade Link, offering smart boards, cameras, mics, and
+            other tech products.</p>
+          <div class="project-links">
+            <a href="https://www.akankshatradelink.in/" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="./assets/credconnect.jpeg" alt="">
+        <div class="portfolio-layer">
+          <h4>CredConnect</h4>
+          <p>Counselling service Android Application which i have made as freelancer for a startup company.</p>
+          <div class="project-links">
+            <a href="https://credconnect.in" target="_blank"><i class="bx bx-link-external"></i></a>
+            <a href="https://github.com/amansingh331/CredConnect" target="_blank"><i class='bx bxl-github'></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="./assets/connect.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Connect</h4>
+          <p>JEE counselling service site which i have made as freelancer for a startup company.</p>
+          <div class="project-links">
+            <a href="https://connectstudent.in" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="./assets/3d.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>3D</h4>
+          <p>Fully featured site of 3D club(Technical club of NIT Rourkela).</p>
+          <div class="project-links">
+            <a href="https://3dnitrkl.co" target="_blank"><i class="bx bx-link-external"></i></a>
+            <a href="https://github.com/amansingh331/website-template-in-php-with-mysqli" target="_blank"><i
+                class='bx bxl-github'></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="./assets/soc.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>SOC</h4>
+          <p>Social Networking Android App.</p>
+          <div class="project-links">
+            <a href="https://github.com/amansingh331/soc" target="_blank"><i class='bx bxl-github'></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="./assets/weather.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Weather App</h4>
+          <p>Website contains lots of feature like weather data of next 7 days and many more things.</p>
+          <div class="project-links">
+            <a href="https://64e28a8002c0931db55d1e23--magnificent-praline-8fc9a2.netlify.app" target="_blank"><i
+                class="bx bx-link-external"></i></a>
+            <a href="https://github.com/amansingh331/weather-app" target="_blank"><i class='bx bxl-github'></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="./assets/sql.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>SQL-Query-Runner</h4>
+          <p>This App basically filter data by providing the sql code to it.</s></p>
+          <div class="project-links">
+            <a href="https://64b6f6f71889d60c6eeccf50--remarkable-pony-7d57a9.netlify.app" target="_blank"><i
+                class="bx bx-link-external"></i></a>
+            <a href="https://github.com/amansingh331/SQL-Query-Runner" target="_blank"><i class='bx bxl-github'></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="./assets/machine.png" alt="">
+        <div class="portfolio-layer">
+          <h4>Calculator</h4>
+          <p>This is basically the desktop app which calculate the different parameter of transformer.</s></p>
+          <div class="project-links">
+            <a href="https://github.com/amansingh331/machine-project" target="_blank"><i class='bx bxl-github'></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- contact section design -->
+  <section class="contact bottom" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <form action="#">
+      <div class="input-box">
+        <div class="input-field">
+          <input type="text" placeholder="Full Name" required>
+          <span class="focus"></span>
+        </div>
+        <div class="input-field">
+          <input type="email" placeholder="Email" required>
+          <span class="focus"></span>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <div class="input-field">
+          <input type="text" placeholder="Subject" required>
+          <span class="focus"></span>
+        </div>
+        <div class="input-field">
+          <input type="number" placeholder="Mobile" required>
+          <span class="focus"></span>
+        </div>
+      </div>
+
+      <div class="textarea-field">
+        <span class="focus"></span>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+      </div>
+
+      <div class="btn-box btns">
+        <button type="submit" class="btn">Submit</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- footer design -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2025 by Aman | All Rights Reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#">
+        <i class="bx bx-up-arrow-alt"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="assets/main.js"></script>
+  <script>
+    var animation = lottie.loadAnimation({
+      container: document.getElementById('lottie-animation'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: "./assets/test.txt"
+    });
+  </script>
 
   <script>
     const currentURL = window.location.href;
     const url = new URL(currentURL);
     const blogIdParam1 = url.searchParams.get('proj');
     const blogIdParam2 = url.searchParams.get('PROJ');
-    
-    
-    if (blogIdParam1 !== null || blogIdParam2 !== null) {
-      let temp = "empty";
+    const hasProjParam = url.searchParams.has('proj');
+    const redirectDelay = 1600;
+    const loadingPopup = document.createElement('div');
 
-      if(blogIdParam1 !== null){
-        temp = blogIdParam1.trim();
-      }else if(blogIdParam2 !== null){
-        temp = blogIdParam2.trim();
-      }
-      
-      const pro = temp.toLowerCase();
-      
-      if(pro === 'whatsapp'){
-        window.location.href = "https://github.com/amansingh331/Portfolio-template-in-php-mysql/tree/main/login/project1";
-      }else if(pro === '3d'){
-        window.location.href = "https://github.com/amansingh331/website-template-in-php-with-mysqli";
-      }else if(pro === 'portfolio'){
-        window.location.href = "https://newportfolio.azurewebsites.net/";
-      }else if(pro === 'counselling'){
-        window.location.href = "https://connectstudent.in";
-      }else if(pro === 'socialnet'){
-        window.location.href = "https://github.com/amansingh331/soc";
-      }else if(pro === 'webs'){
-        window.location.href = "http://amanusingh.co";
-      }else if(pro === 'cv'){
-        window.location.href = "https://drive.google.com/file/d/19XNGt6xyL7dmpD12JDdHZ1k7jydJpZw0/view";
+    loadingPopup.className = 'loading-popup';
+    loadingPopup.id = 'loading-popup';
+    loadingPopup.setAttribute('role', 'alert');
+    loadingPopup.setAttribute('aria-live', 'assertive');
+    loadingPopup.setAttribute('aria-hidden', 'true');
+    loadingPopup.innerHTML = '<div class="loading-popup-card"><h2>Please wait page is loding!!</h2></div>';
+
+
+    if (hasProjParam) {
+      const pro = (blogIdParam1 || '').trim().toLowerCase();
+
+      document.body.appendChild(loadingPopup);
+      loadingPopup.classList.add('is-visible');
+      loadingPopup.setAttribute('aria-hidden', 'false');
+
+      setTimeout(() => {
+        loadingPopup.classList.remove('is-visible');
+        loadingPopup.setAttribute('aria-hidden', 'true');
+      }, redirectDelay);
+
+      if (pro === 'whatsapp') {
+        setTimeout(() => {
+          window.location.href = "https://github.com/amansingh331/Portfolio-template-in-php-mysql/tree/main/login/project1";
+        }, redirectDelay);
+      } else if (pro === '3d') {
+        setTimeout(() => {
+          window.location.href = "https://github.com/amansingh331/website-template-in-php-with-mysqli";
+        }, redirectDelay);
+      } else if (pro === 'counselling') {
+        setTimeout(() => {
+          window.location.href = "https://connectstudent.in";
+        }, redirectDelay);
+      } else if (pro === 'socialnet') {
+        setTimeout(() => {
+          window.location.href = "https://github.com/amansingh331/soc";
+        }, redirectDelay);
+      } else if (pro === 'webs') {
+        setTimeout(() => {
+          window.location.href = "http://amanusingh.co";
+        }, redirectDelay);
+      } else if (pro === 'cv') {
+        setTimeout(() => {
+          window.location.href = "https://drive.google.com/file/d/19XNGt6xyL7dmpD12JDdHZ1k7jydJpZw0/view";
+        }, redirectDelay);
       }
     }
   </script>
 </body>
+
 </html>
